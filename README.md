@@ -11,9 +11,10 @@ General module to install:
 pip install requests
 ```
 
-Within the python environment:
+Linux command to run:
 ```bash
-python scraper.py
+chmod +x scraper.py
+./scraper.py
 ```
 
 # Preview of Output (Result)
