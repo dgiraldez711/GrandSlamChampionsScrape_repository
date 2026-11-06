@@ -26,11 +26,12 @@ def clean(column):
     return html.unescape(text).strip()
 
 def clean_country(country):
-    ''' Extracts only the three word country code for every country'''
+    '''Extracts only the three word country code for every country'''
     match = re.match(r"[A-Z]{3}", country)
     return match.group() if match else country
 
 def clean_champion(champion):
+    '''Extracts only the champion name no symbols or numbers after'''
     champion = re.sub(r"\(\d+/\d+\)", "", champion) # removes the numbers in parentheses (i.e.(3,4))
     champion = re.sub(r"[†‡◊*]", "", champion) # removes any symbols after the champion name
     return champion.strip()
