@@ -13,8 +13,8 @@ pip install requests
 
 Linux command to run:
 ```bash
-chmod +x scraper.py
-./scraper.py
+chmod +x scrape.py
+./scrape.py
 ```
 
 # Preview of Output (Result)
